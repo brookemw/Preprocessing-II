@@ -6,6 +6,11 @@
 .title {
     margin: 0px 280px 0px 0px;
     text-align: left;
+
+    @media @mobile {
+        text-align: center;
+        margin: auto;
+    }
 }
 .navigation {
     display: flex;
@@ -14,6 +19,10 @@
     margin: auto;
     padding: 20px 0px 0px 0px;
     width: 800px;
+
+    @media @mobile {
+        width: 500px;
+    }
 }
 .link {
     padding: 10px 20px;
@@ -26,4 +35,8 @@
     width: 1000px;
     display: block;
     margin: auto;
+
+    @media @mobile {
+        width: 500px;
+    }
 }
