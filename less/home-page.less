@@ -40,17 +40,18 @@
 
       @media @mobile {
         width: 100%;
-        margin: 30px;
-        border: 1px solid red;
+        margin: 30px 30px 30px 30px;
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
-      img {
-        border-radius: 10px;
-      }
+      @media @mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     }
   }
 
@@ -67,11 +68,20 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding-right: 20px;
+    }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+      @media @mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
   }
 
@@ -82,11 +92,6 @@
     img {
       border-radius: 10px;
     }
-
-    @media @mobile {
-      
-  }
-  }
 
   .content-pick {
     padding-top: 30px;
@@ -120,4 +125,5 @@
     display: flex;
     justify-content: center;
   }
+}
 }// home

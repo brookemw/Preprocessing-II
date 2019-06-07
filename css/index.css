@@ -207,14 +207,19 @@ img {
   color: black;
   text-decoration: none;
 }
-.dashed-line {
+@media (max-width: 500px) {
+  .link {
+    padding: 10px 30px 0px 30px;
+  }
+}
+.link .dashed-line {
   border-bottom: 2px dashed #bbbbbb;
   width: 1000px;
   display: block;
   margin: auto;
 }
 @media (max-width: 500px) {
-  .dashed-line {
+  .link .dashed-line {
     width: 500px;
   }
 }
@@ -267,16 +272,19 @@ img {
 @media (max-width: 500px) {
   .home .text-content {
     width: 100%;
-    margin: 30px;
-    border: 1px solid red;
+    margin: 30px 30px 30px 30px;
   }
 }
 .home .text-content .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .text-content .img-content img {
-  border-radius: 10px;
+@media (max-width: 500px) {
+  .home .text-content .img-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -292,9 +300,21 @@ img {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .text-content {
+    padding-right: 20px;
+  }
+}
 .home .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .content-destination {
   width: 75%;
@@ -303,28 +323,28 @@ img {
 .content-destination img {
   border-radius: 10px;
 }
-.content-pick {
+.content-destination .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .content-pick {
+  .content-destination .content-pick {
     display: block;
     padding: 30px 60px 0px 60px;
   }
 }
-.content-pick .destination {
+.content-destination .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
 @media (max-width: 500px) {
-  .content-pick .destination {
+  .content-destination .content-pick .destination {
     width: 100%;
   }
 }
-.content-pick .btn {
+.content-destination .content-pick .btn {
   padding: 10px 50px;
   background: #318384;
   border: 1px solid gray;
