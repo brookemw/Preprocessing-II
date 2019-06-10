@@ -1,1 +1,55 @@
 // Navigation Styles here
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 0px 280px 0px 0px;
+    text-align: left;
+
+    @media @mobile {
+        text-align: center;
+        margin: auto;
+    }
+}
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
+    width: 800px;
+
+    @media @mobile {
+        width: 500px;
+        display: block;
+        text-align: center;
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        display: block;
+        padding: 0px 0px 15px 0px;
+    }
+    }
+}
+.link {
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+
+    @media @mobile {
+        padding: 10px 30px 0px 30px;
+    }
+
+.dashed-line {
+    border-bottom: 2px dashed #bbbbbb;
+    width: 1000px;
+    display: block;
+    margin: auto;
+
+    @media @mobile {
+        width: 500px;
+    }
+}
+}
